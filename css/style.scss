@@ -1,37 +1,42 @@
 @font-face {
   font-family: "Sen-Bold";
-  src: url("../assets/font/Sen-Bold.ttf") format("ttf");
+  src: url("../assets/font/Sen-Bold.otf");
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "Sen-Regular";
-  src: url("../assets/font/Sen-Regular.ttf") format("ttf");
+  src: url("../assets/font/Sen-Regular.otf");
   font-style: normal;
   font-weight: normal;
 }
 
 $color-base: #000000;
 $color-level-1: #181823;
-$color-light-grey: #DEECF9;
-$color-dark-grey: #C7E0F4;
+$color-light-grey: #8491A0;
+$color-dark-grey: #5B6876;
 $color-text: #FFFFFF;
 $color-primary: #5221E6;
 $color-green: #3CC74E;
 $color-pink: #E95D90;
+$color-blue: #609BFF;
 $color-peach: #FFF3E4;
 $color-violet: #FBE4FF;
 
 $header-height: 88px;
 
-.main-caption {
+.label_big {
   font-size: 117px;
+  line-height: 141px;
 }
 .h1 {
   font-size: 78px;
+  line-height: 94px;
 }
 .h2 {
   font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0.5px;
   font-weight: bold;
 }
 .h3 {
@@ -48,13 +53,17 @@ $header-height: 88px;
 }
 .text-body-big {
   font-size: 18px;
+  line-height: 26px;
 }
 .text-body-small {
   font-size: 16px;
+  line-height: 24px;
 }
 .text-overline {
   font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .text-button {
   font-size: 18px;
@@ -63,7 +72,7 @@ $header-height: 88px;
 
 
 .body {
-  font-family: "Sen-Regular", sans-serif;
+  font-weight: 300;
   width: 100%;
   max-width: 1920px;
   background-color: black;
@@ -72,22 +81,28 @@ $header-height: 88px;
   align-items: center;
 }
 
-/**********-----HEADER-----*********/
-
-.header {
-  width: 100%;
+/*basic sizes*/
+header, footer {
   max-width: 1440px;
-  height: $header-height;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/**********-----HEADER-----*********/
+.header {
+  height: $header-height;
   padding: 0 72px;
+  position: relative;
+  z-index: 5;
   .header__logo {}
   .header__navbar {
     height: 100%;
   }
   .navbar {
-    font-family: "Sen-Bold", sans-serif;
+    font-family: "Sen-Regular", sans-serif;
+    font-weight: 400;
     color: $color-text;
     &__menu {
       display: flex;
@@ -100,7 +115,7 @@ $header-height: 88px;
         align-items: center;
         justify-content: center;
         letter-spacing: 1px;
-        padding: 0 24px;
+        padding: 0 21px;
         cursor: pointer;
         &.active {
           background-color: $color-primary;
@@ -110,5 +125,207 @@ $header-height: 88px;
   }
 }
 
+/**********-----MAIN >>> hero-----*********/
+.main {
+  font-family: "Sen-Regular", sans-serif;
+  color: $color-text;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+}
+.hero {
+  position: relative;
+  top: 0 - $header-height;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  &__content {
+    width: 100%;
+    padding-right: 40px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .hero__image {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      height: 65vh;
+      width: 52vw;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .hero__info {
+      width: 53%;
+      font-family: Sen-Bold, sans-serif;
+      &__caption {
+        margin-bottom: 40px;
+        &_grey {
+          color: $color-light-grey;
+        }
+      }
+      &__description {
+        font-family: Sen-Regular, sans-serif;
+      }
+    }
+  }
+  &__background {
+    width: 62.5%;
+    height: 100%;
+    background-color: $color-level-1;
+  }
 
+}
+
+/**********-----MAIN >>> experience-----*********/
+.companies{
+  padding: 120px - $header-height 72px 120px;
+  &__caption-block {
+    margin-bottom: 40px
+  }
+  .caption-block {
+    &__overline{
+      color: $color-light-grey;
+      margin-bottom: 8px;
+    }
+    &__caption{
+      max-width: 690px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &__item{
+      width: 32%;
+    }
+    .company {
+      &__label-number{
+        color: $color-light-grey;
+        margin-bottom: 3px;
+      }
+      &__caption {
+        margin-bottom: 28px;
+        &_green {
+          color: $color-green;
+        }
+        &_blue {
+          color: $color-blue;
+        }
+        &_pink {
+          color: $color-pink;
+        }
+      }
+      &__description {
+        color: $color-light-grey;
+        width: 90%;
+      }
+    }
+  }
+}
+.philosophy {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  &__text {
+    padding: 120px 72px;
+    width: 50%;
+    color: $color-level-1;
+    background-color: $color-peach;
+    &__caption {
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+    &__description {
+      color: $color-dark-grey;
+      margin-bottom: 135px;
+    }
+    &__link {
+      text-decoration: none;
+      color: $color-level-1;
+      border-bottom: 1px solid $color-level-1;
+      padding-bottom: 7px;
+    }
+  }
+  &__image {
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.skillset {
+  width: 100%;
+  padding: 120px 0;
+  display: flex;
+  &__description {
+    width: 35.8%;
+    padding: 0 72px;
+    &__caption {
+      letter-spacing: 1px;
+      margin-bottom: 26px;
+    }
+    &__text {
+      color: $color-light-grey;
+    }
+  }
+  &__list {
+    width: 64.2%;
+    display: flex;
+    padding-right: 46px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    &__item {
+      width: 50%;
+    }
+    .skill {
+      &__icon {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 27px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      &__caption {
+        margin-bottom: 17px;
+      }
+      &__description {
+        color: $color-light-grey;
+        width: 85%;
+      }
+    }
+  }
+}
+.brands-container {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  .brands-tape {
+    height: 100%;
+    display: inline-flex;
+    &__item {
+      width: 340px;
+      height: 140px;
+      border: 1px solid $color-level-1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {}
+    }
+  }
+}
+
+/**********-----MAIN >>> projects-----*********/
 
