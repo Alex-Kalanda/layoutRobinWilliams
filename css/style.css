@@ -24,14 +24,18 @@
 
 .h3 {
   font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
   font-weight: bold; }
 
 .h4 {
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold; }
 
 .h5 {
   font-size: 16px;
+  line-height: 24px;
   font-weight: bold; }
 
 .text-body-big {
@@ -50,6 +54,7 @@
 
 .text-button {
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold; }
 
 .body {
@@ -114,7 +119,7 @@ header, footer {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        letter-spacing: 1px;
+        letter-spacing: 0.7px;
         padding: 0 21px;
         cursor: pointer; }
         .header .navbar__menu .navbar__item.active {
@@ -151,8 +156,8 @@ header, footer {
     position: absolute;
     right: 0;
     top: 50%;
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(-39%);
+            transform: translateY(-39%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,7 +182,7 @@ header, footer {
       width: 53%;
       font-family: Sen-Bold, sans-serif; }
       .hero__content .hero__info__caption {
-        margin-bottom: 40px; }
+        margin-bottom: 36px; }
         .hero__content .hero__info__caption_grey {
           color: #8491A0; }
       .hero__content .hero__info__description {
@@ -207,10 +212,9 @@ header, footer {
     .companies__content__item {
       width: 32%; }
     .companies__content .company__label-number {
-      color: #8491A0;
-      margin-bottom: 3px; }
+      color: #8491A0; }
     .companies__content .company__caption {
-      margin-bottom: 28px; }
+      margin-bottom: 22px; }
       .companies__content .company__caption_green {
         color: #3CC74E; }
       .companies__content .company__caption_blue {
@@ -258,7 +262,7 @@ header, footer {
   display: -ms-flexbox;
   display: flex; }
   .skillset__description {
-    width: 35.8%;
+    width: 35.7%;
     padding: 0 72px; }
     .skillset__description__caption {
       letter-spacing: 1px;
@@ -279,14 +283,14 @@ header, footer {
     .skillset__list .skill__icon {
       width: 32px;
       height: 32px;
-      margin-bottom: 27px; }
+      margin-bottom: 24px; }
       .skillset__list .skill__icon img {
         width: 100%;
         height: 100%;
         -o-object-fit: contain;
            object-fit: contain; }
     .skillset__list .skill__caption {
-      margin-bottom: 17px; }
+      margin-bottom: 12px; }
     .skillset__list .skill__description {
       color: #8491A0;
       width: 85%; }
@@ -315,5 +319,172 @@ header, footer {
               justify-content: center; }
 
 /**********-----MAIN >>> projects-----*********/
+.projects {
+  width: 100%; }
+  .projects .projects-done {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 24px;
+    padding: 120px 72px;
+    height: 2200px; }
+    .projects .projects-done .caption-block {
+      padding-right: 15px;
+      margin-bottom: 55px; }
+      .projects .projects-done .caption-block__overline {
+        color: #8491A0;
+        margin-bottom: 8px; }
+      .projects .projects-done .caption-block__caption {
+        letter-spacing: 0.8px; }
+    .projects .projects-done .projects__item {
+      width: calc(51% - 24px); }
+      .projects .projects-done .projects__item__button {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .projects .projects-done .projects__item__button .button_purple-border {
+          padding: 24px 32px;
+          border: 1px #5221E6 solid;
+          cursor: pointer;
+          background-color: transparent;
+          color: #FFFFFF;
+          text-transform: uppercase; }
+        .projects .projects-done .projects__item__button button {
+          margin-top: 65px; }
+    .projects .projects-done .project__image {
+      width: 100%;
+      height: 620px; }
+      .projects .projects-done .project__image img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .projects .projects-done .project__text {
+      padding: 40px 32px;
+      background-color: #181823; }
+      .projects .projects-done .project__text__caption {
+        margin-bottom: 16px; }
+      .projects .projects-done .project__text__description {
+        color: #8491A0; }
+  .projects .instagram {
+    width: 100%;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .projects .instagram__text {
+      padding: 120px 72px;
+      width: 50%;
+      color: #181823;
+      background-color: #FFF3E4; }
+      .projects .instagram__text__caption {
+        letter-spacing: 1px;
+        margin-bottom: 25px; }
+      .projects .instagram__text__description {
+        color: #5B6876;
+        margin-bottom: 135px; }
+      .projects .instagram__text__link {
+        text-decoration: none;
+        color: #181823;
+        border-bottom: 1px solid #181823;
+        padding-bottom: 7px; }
+    .projects .instagram__image {
+      width: 50%; }
+      .projects .instagram__image img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+  .projects .dribbble {
+    width: 100%;
+    padding: 120px 182px; }
+    .projects .dribbble__text {
+      width: 640px;
+      margin-bottom: 124px; }
+      .projects .dribbble__text__caption {
+        margin-bottom: 24px; }
+      .projects .dribbble__text__description {
+        color: #8491A0;
+        margin-bottom: 42px; }
+      .projects .dribbble__text__link {
+        color: #FFFFFF;
+        text-decoration: none;
+        border-bottom: 1px solid #8491A0;
+        padding-bottom: 7px; }
+    .projects .dribbble__image {
+      width: 100%;
+      height: 678px; }
+      .projects .dribbble__image img {
+        width: 100%;
+        border-radius: 10px; }
 
+/**********-----MAIN >>> testimonials-----*********/
+.testimonials {
+  width: 100%;
+  padding: 120px 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px; }
+  .testimonials__text {
+    width: 50%;
+    padding-right: 48px; }
+    .testimonials__text__caption {
+      margin-bottom: 24px; }
+    .testimonials__text__description {
+      margin-bottom: 42px; }
+    .testimonials__text__link {
+      color: #FFFFFF;
+      text-decoration: none;
+      border-bottom: 1px solid #8491A0;
+      padding-bottom: 7px; }
+  .testimonials__list {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 120px; }
+    .testimonials__list__item {
+      width: 100%; }
+    .testimonials__list .review {
+      border: 1px #5B6876 solid; }
+      .testimonials__list .review__image {
+        width: 100%;
+        height: 360px; }
+        .testimonials__list .review__image img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .testimonials__list .review__text-container {
+        padding: 64px; }
+        .testimonials__list .review__text-container .review__quote {
+          margin-bottom: 64px; }
+        .testimonials__list .review__text-container .review__person {
+          color: #8491A0; }
+          .testimonials__list .review__text-container .review__person__name {
+            margin-bottom: 4px; }
 /*# sourceMappingURL=style.css.map */

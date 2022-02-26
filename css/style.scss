@@ -24,6 +24,7 @@ $color-peach: #FFF3E4;
 $color-violet: #FBE4FF;
 
 $header-height: 88px;
+$projects-gap: 24px;
 
 .label_big {
   font-size: 117px;
@@ -41,14 +42,18 @@ $header-height: 88px;
 }
 .h3 {
   font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
   font-weight: bold;
 }
 .h4 {
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 }
 .h5 {
   font-size: 16px;
+  line-height: 24px;
   font-weight: bold;
 }
 .text-body-big {
@@ -67,6 +72,7 @@ $header-height: 88px;
 }
 .text-button {
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
 }
 
@@ -114,7 +120,7 @@ header, footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        letter-spacing: 1px;
+        letter-spacing: 0.7px;
         padding: 0 21px;
         cursor: pointer;
         &.active {
@@ -147,7 +153,7 @@ header, footer {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-40%);
+    transform: translateY(-39%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -167,7 +173,7 @@ header, footer {
       width: 53%;
       font-family: Sen-Bold, sans-serif;
       &__caption {
-        margin-bottom: 40px;
+        margin-bottom: 36px;
         &_grey {
           color: $color-light-grey;
         }
@@ -209,10 +215,9 @@ header, footer {
     .company {
       &__label-number{
         color: $color-light-grey;
-        margin-bottom: 3px;
       }
       &__caption {
-        margin-bottom: 28px;
+        margin-bottom: 22px;
         &_green {
           color: $color-green;
         }
@@ -268,7 +273,7 @@ header, footer {
   padding: 120px 0;
   display: flex;
   &__description {
-    width: 35.8%;
+    width: 35.7%;
     padding: 0 72px;
     &__caption {
       letter-spacing: 1px;
@@ -291,7 +296,7 @@ header, footer {
       &__icon {
         width: 32px;
         height: 32px;
-        margin-bottom: 27px;
+        margin-bottom: 24px;
         img {
           width: 100%;
           height: 100%;
@@ -299,7 +304,7 @@ header, footer {
         }
       }
       &__caption {
-        margin-bottom: 17px;
+        margin-bottom: 12px;
       }
       &__description {
         color: $color-light-grey;
@@ -328,4 +333,191 @@ header, footer {
 }
 
 /**********-----MAIN >>> projects-----*********/
+.projects {
+  width: 100%;
+  .projects-done {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: $projects-gap;
+    padding: 120px 72px;
+    height: 2200px;
+    .caption-block {
+      padding-right: 15px;
+      margin-bottom: 55px;
+      &__overline {
+        color: $color-light-grey;
+        margin-bottom: 8px;
+      }
+      &__caption {
+        letter-spacing: 0.8px;
+      }
+    }
+    .projects__item {
+      width: calc(51% - #{$projects-gap});
+      &__button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button_purple-border {
+          padding: 24px 32px;
+          border: 1px $color-primary solid;
+          cursor: pointer;
+          background-color: transparent;
+          color: $color-text;
+          text-transform: uppercase;
+        }
+        button {
+          margin-top: 65px;
+        }
+      }
+    }
+    .project {
+      &__image {
+        width: 100%;
+        height: 620px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__text {
+        padding: 40px 32px;
+        background-color: $color-level-1;
+        &__caption {
+          margin-bottom: 16px;
+        }
+        &__description {
+          color: $color-light-grey;
+        }
+      }
+    }
+  }
+  .instagram {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    &__text {
+      padding: 120px 72px;
+      width: 50%;
+      color: $color-level-1;
+      background-color: $color-peach;
+      &__caption {
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+      }
+      &__description {
+        color: $color-dark-grey;
+        margin-bottom: 135px;
+      }
+      &__link {
+        text-decoration: none;
+        color: $color-level-1;
+        border-bottom: 1px solid $color-level-1;
+        padding-bottom: 7px;
+      }
+    }
+    &__image {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .dribbble {
+    width: 100%;
+    padding: 120px 182px;
+    &__text {
+      width: 640px;
+      margin-bottom: 124px;
+      &__caption {
+        margin-bottom: 24px;
+      }
+      &__description {
+        color: $color-light-grey;
+        margin-bottom: 42px;
+      }
+      &__link {
+        color: $color-text;
+        text-decoration: none;
+        border-bottom: 1px solid $color-light-grey;
+        padding-bottom: 7px;
+      }
+    }
+    &__image {
+      width: 100%;
+      height: 678px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+/**********-----MAIN >>> testimonials-----*********/
+.testimonials {
+  width: 100%;
+  padding: 120px 72px;
+  display: flex;
+  gap: 24px;
+  &__text {
+    width: 50%;
+    padding-right: 48px;
+    &__caption {
+      margin-bottom: 24px;
+    }
+    &__description {
+      margin-bottom: 42px;
+    }
+    &__link {
+      color: $color-text;
+      text-decoration: none;
+      border-bottom: 1px solid $color-light-grey;
+      padding-bottom: 7px;
+    }
+  }
+  &__list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    &__item {
+      width: 100%;
+    }
+    .review {
+      border: 1px $color-dark-grey solid;
+      &__image {
+        width: 100%;
+        height: 360px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__text-container {
+        padding: 64px;
+        .review__quote {
+          margin-bottom: 64px;
+        }
+        .review__person {
+          color: $color-light-grey;
+          &__name {
+            margin-bottom: 4px;
+          }
+          &__position {
+
+          }
+        }
+      }
+    }
+  }
+}
 
