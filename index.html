@@ -198,7 +198,7 @@
             </div>
             <div class="projects__item">
                 <div class="projects__item__button">
-                    <button id="allProjects" class="button_purple-border text-button">VIeW ALL PROJECTS</button>
+                    <button id="allProjects" class="button_purple-border button_middle text-button">VIeW ALL PROJECTS</button>
                 </div>
             </div>
         </div>
@@ -278,9 +278,85 @@
             </div>
         </div>
     </section>
+    <section class="photography">
+        <div class="photography__text">
+            <h2 class="h2 photography__text__caption">Photography</h2>
+            <p class="photography__text__description text-body-big">Here is a collection of my best travel pictures
+                that I took while travelling places all around the world. </p>
+        </div>
+        <div class="photography__buttons">
+            <button class="button_purple-border button_small text-button active">ITALY</button>
+            <button class="button_purple-border button_small text-button">AUSTRALIA</button>
+            <button class="button_purple-border button_small text-button">INDIA</button>
+            <button class="button_purple-border button_small text-button">BRAZIL</button>
+        </div>
+        <div class="photography__photo">
+            <div class="photography__photo__item">
+                <img src="./assets/img/section-photo/italy-1.jpg" alt="photo nature">
+            </div>
+            <div class="photography__photo__item">
+                <img src="./assets/img/section-photo/italy-2.jpg" alt="photo nature">
+            </div>
+            <div class="photography__photo__item">
+                <img src="./assets/img/section-photo/italy-3.jpg" alt="photo nature">
+            </div>
+            <div class="photography__photo__item">
+                <img src="./assets/img/section-photo/italy-4.jpg" alt="photo nature">
+            </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <div class="contact-form__text">
+            <h2 class="h2 contact-form__text__caption">Let’s get started</h2>
+            <p class="contact-form__text__description text-body-big">Now that you know a lot about me, let me know if you are
+                interested to work with me.</p>
+        </div>
+        <form class="contact-form__form" action="#">
+            <label class="text-body-small" for="name">Name</label>
+            <input type="text" id="name" class="input-small">
 
+            <label class="text-body-small" for="email">Email</label>
+            <input type="text" id="email" class="input-small">
 
+            <label class="text-body-small" for="message">Message</label>
+            <input type="text" id="message" class="input-middle">
+
+            <button id="form-button" class="button_purple-border text-button active">Let’s get started</button>
+        </form>
+    </section>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__contacts">
+        <div class="footer__contacts__social social">
+            <div class="social__logo">
+                <img src="./assets/svg/header-logo.svg" alt="logo">
+            </div>
+            <div class="social__links">
+                <div class="social__links__item">
+                    <img src="./assets/svg/twiter.svg" alt="link to twiter">
+                </div>
+                <div class="social__links__item">
+                    <img src="./assets/svg/dribbble.svg" alt="link to dribbble">
+                </div>
+                <div class="social__links__item">
+                    <img src="./assets/svg/linkedIn.svg" alt="link to linkedin">
+                </div>
+            </div>
+        </div>
+        <div class="footer__contacts__nav">
+            <div class="nav-wrapper">
+                <span class="nav-wrapper__item text-body-small">Home</span>
+                <span class="nav-wrapper__item text-body-small">About</span>
+                <span class="nav-wrapper__item text-body-small">Work</span>
+                <span class="nav-wrapper__item text-body-small">Process</span>
+                <span class="nav-wrapper__item text-body-small">Store</span>
+                <span class="nav-wrapper__item text-body-small">Blog</span>
+                <span class="nav-wrapper__item text-body-small">Reading List</span>
+            </div>
+
+        </div>
+    </div>
+    <p class="footer__copyright text-body-small">Not Copyright 2020 • Robin Williams. Webflow cloneable</p>
+</footer>
 </body>
 </html>
